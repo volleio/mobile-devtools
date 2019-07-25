@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Mobile browser extension based on Eruda for debugging.",
-  "homepage_url": "https://volle.io",
+  "homepage_url": "https://github.com/volleio/mobile-devtools#readme",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

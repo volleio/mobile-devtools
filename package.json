@@ -1,0 +1,22 @@
+{
+  "name": "mobile-devtools",
+  "version": "0.0.1",
+  "description": "Mobile browser extension based on Eruda for debugging.",
+  "main": "src/mobile-devtools.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volleio/mobile-devtools.git"
+  },
+  "author": "Lucas Volle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volleio/mobile-devtools/issues"
+  },
+  "homepage": "https://github.com/volleio/mobile-devtools#readme",
+  "dependencies": {
+    "eruda": "^1.5.7"
+  }
+}
