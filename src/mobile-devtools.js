@@ -1,13 +1,17 @@
-chrome.extension.sendMessage({}, function(response) {
-	var readyStateCheckInterval = setInterval(function() {
-	if (document.readyState === "complete") {
-		clearInterval(readyStateCheckInterval);
-
-		// ----------------------------------------------------------
-		// This part of the script triggers when page is done loading
-		console.log("Hello. This message was sent from scripts/inject.js");
-		// ----------------------------------------------------------
-
+function OpenMobileDevtools()
+{
+	const erudaScript = document.createElement('script');
+	erudaScript.src = chrome.runtime.getURL('/node_modules/eruda/eruda.min.js');
+	erudaScript.onload = function() {
+		eruda.init();
 	}
-	}, 10);
-});
+	document.head.appendChild(erudaScript);
+}
+
+let readyStateCheckInterval = setInterval(function() {
+if (document.readyState === 'complete') {
+	clearInterval(readyStateCheckInterval);
+
+	OpenMobileDevtools();
+}
+}, 10);

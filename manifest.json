@@ -16,6 +16,9 @@
       ],
       "js": [
         "src/mobile-devtools.js"
+      ],
+      "web_accessible_resources": [
+        "node_modules/eruda/eruda.min.js"
       ]
     }
   ]
