@@ -1,0 +1,37 @@
+{
+  "name": "Mobile DevTools",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Mobile browser extension based on Eruda for debugging.",
+  "homepage_url": "https://github.com/volleio/mobile-devtools#readme",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Mobile DevTools"
+  },
+  "content_scripts": [{
+    "js": [
+      "mobile-devtools.js"
+    ],
+    "matches": [
+      "https://*/*",
+      "http://*/*"
+    ]
+  }],
+  "web_accessible_resources": [
+    "eruda.min.js",
+    "toggle-devtools.js"
+  ],
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}

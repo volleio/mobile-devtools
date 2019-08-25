@@ -2,9 +2,11 @@
   "name": "mobile-devtools",
   "version": "0.0.1",
   "description": "Mobile browser extension based on Eruda for debugging.",
-  "main": "src/mobile-devtools.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run cleanup && npm run copy-assets && npm run pack",
+    "copy-assets": "cpx \"src/**/*.{html,js,json,png}\" ./build && cpx node_modules/eruda/eruda.min.js ./build",
+    "pack": "crx pack build -o mobile-devtools.crx",
+    "cleanup": "rimraf build/"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,9 @@
   },
   "homepage": "https://github.com/volleio/mobile-devtools#readme",
   "dependencies": {
-    "eruda": "^1.5.7"
+    "cpx": "^1.5.0",
+    "crx": "^5.0.1",
+    "eruda": "^1.5.7",
+    "rimraf": "^3.0.0"
   }
 }
