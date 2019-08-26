@@ -21,7 +21,7 @@
   "dependencies": {
     "cpx": "^1.5.0",
     "crx": "^5.0.1",
-    "eruda": "^1.5.7",
+    "eruda": "github:volleio/eruda#build",
     "rimraf": "^3.0.0"
   }
 }
