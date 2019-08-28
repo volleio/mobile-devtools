@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/volleio/mobile-devtools#readme",
   "dependencies": {
-    "cpx": "^1.5.0",
+    "cpx2": "^2.0.0",
     "crx": "^5.0.1",
     "eruda": "github:volleio/eruda#build",
     "rimraf": "^3.0.0"
