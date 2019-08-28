@@ -2,7 +2,7 @@
   "name": "Mobile DevTools",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Mobile browser extension based on Eruda for debugging.",
+  "description": "A mobile browser extension for debugging web sites and applications. Based on Eruda, Mobile DevTools allows you to view the console, DOM elements, network traffic, page source, resources, and more.",
   "homepage_url": "https://github.com/volleio/mobile-devtools#readme",
   "icons": {
     "16": "icons/mobile-devtools16.png",
